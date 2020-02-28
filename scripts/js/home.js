@@ -42,7 +42,7 @@ define(['jquery',
                 sceneRenderTarget = new THREE.Scene();
 
                 cameraOrtho = new THREE.OrthographicCamera(SCREEN_WIDTH / -2, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_HEIGHT / -2, -10000, 10000);
-                cameraOrtho.position.z = 100;
+                cameraOrtho.position.z = 200;
 
                 sceneRenderTarget.add(cameraOrtho);
 
@@ -274,7 +274,7 @@ define(['jquery',
                 var delta = clock.getDelta();
                 if (firstTime) {
                     png.onload = drawScene;
-                    png.src = "./images/circle-colored-200.png"
+                    png.src = "./images/profile-pic.jpeg"
                     firstTime = false;
                 }
                 if (terrain.visible) {
@@ -398,7 +398,7 @@ define(['jquery',
                 if (!aboutVisible) {
                     aboutVisible = true;
                     document.getElementById("email-to").style.display = 'none';
-                    document.getElementById("nav-projects").style.display = 'none';
+                    // document.getElementById("nav-projects").style.display = 'none';
                     $('#nav-about').text("Close");
                     animAboutReveal =  anime.timeline({
                         loop: false,
@@ -461,7 +461,7 @@ define(['jquery',
                         duration: 500,
                         complete: function(){
                             document.getElementById("email-to").style.display = 'block';
-                            document.getElementById("nav-projects").style.display = 'block';
+                            // document.getElementById("nav-projects").style.display = 'block';
                         }
                     })
                 }

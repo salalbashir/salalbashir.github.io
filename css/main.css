@@ -390,7 +390,8 @@ body {
 /*#snappy-LI_16, #snappy-LI_17, #snappy-LI_19*/
 
 #social-links-container {
-    margin-top: 6%;
+    clear: both;
+    padding-top: 10px;
 }
 
 /*#snappy-DIV_27*/
