@@ -286,7 +286,6 @@ body {
     border-collapse: collapse;
     box-sizing: border-box;
     color: #A9A9A9;
-    height: 70px;
     width: 42%;
     letter-spacing: 0.5px;
     text-rendering: geometricPrecision;
@@ -350,6 +349,7 @@ body {
 /*#snappy-LI_16, #snappy-LI_17, #snappy-LI_19*/
 
 #experience-container {
+    margin-right: 10%;
     float: left;
     box-sizing: border-box;
     font: normal normal 400 normal 16px / 16px Raleway;
